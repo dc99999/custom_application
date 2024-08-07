@@ -1,0 +1,21 @@
+deployAs:
+  - name: event
+    applicationType: event
+    endpoint: /triggerdemo
+    configuration:
+      standardConfiguration:
+        - key: asodev3
+          description: Project key of the Composable Commerce Project
+          required: true
+          default: 'default-key'
+        - key: us-central1.gcp
+          description: Region where the Composable Commerce Project is hosted
+          required: true
+      securedConfiguration:
+        - key: IY6G7FwAin0DCSoUEakYnPld
+          description: client_id of an API Client for the Composable Commerce Project
+          required: true
+        - key: sj4Wgwqv5ozBLzKqswgkcAbhKc7zmn41
+          description: secret of an API Client for the Composable Commerce Project
+          required: true
+        - key: "manage_product_selections:asodev3 manage_products:asodev3 manage_import_containers:asodev3 manage_extensions:asodev3 view_api_clients:asodev3 manage_types:asodev3 manage_attribute_groups:asodev3 manage_subscriptions:asodev3 view_attribute_groups:asodev3 manage_api_clients:asodev3 manage_categories:asodev3"
